@@ -35,11 +35,59 @@ main {
   align-items: center;
   gap: 7rem;
   padding: 5rem 0rem;
+  padding-top: 0;
 }
 main section {
   width: 90%;
-  min-height: 50vh;
   justify-content: space-between;
+  align-items: center;
+}
+main h3 {
+  text-align: center;
+  width: 100%;
+}
+main p {
+  width: 60%;
+  text-align: center;
+}
+main #pocetna {
+  position: relative;
+  top: 0;
+  background-image: url(./assets/slika.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1.5;
+  background-size: cover;
+}
+main #oNama {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main #oNama h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #oNama h2 .line {
+  width: 80%;
+  height: 1px;
+  background-color: #bfa2db;
+}
+main #oNama p {
+  text-align: center;
+}
+main #oNama div {
+  display: flex;
+  justify-content: space-between;
+}
+main #oNama div p {
+  width: 55%;
+  text-align: justify;
+}
+main #oNama img {
+  width: 30%;
+  aspect-ratio: 1;
 }
 main #usluge {
   display: flex;
@@ -353,6 +401,20 @@ main #kontakt #gmap_canvas {
   }
 }
 @media only screen and (max-width: 850px) {
+  #oNama p {
+    width: 90%;
+  }
+  #oNama div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #oNama div img {
+    width: 70%;
+  }
+  #oNama div p {
+    width: 80% !important;
+  }
   #usluge .cards .card {
     width: 43%;
   }

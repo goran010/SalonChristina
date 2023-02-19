@@ -36,10 +36,60 @@ main {
   align-items: center;
   gap: 7rem;
   padding: 5rem 0rem;
+  padding-top: 0;
   section {
     width: 90%;
-    min-height: 50vh;
+
     justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    text-align: center;
+    width: 100%;
+  }
+  p {
+    width: 60%;
+    text-align: center;
+  }
+  #pocetna{
+    position:relative;
+    top: 0;
+    background-image: url(./assets/slika.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1.5;
+    background-size: cover;
+  }
+  #oNama {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .line {
+        width: 80%;
+        height: 1px;
+        background-color: $color-3;
+      }
+    }
+    p{
+   text-align: center;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: 55%;
+        text-align: justify;
+      }
+    }
+    img {
+      width: 30%;
+      aspect-ratio: 1;
+    }
+    
   }
   #usluge {
     display: flex;
@@ -367,6 +417,21 @@ main {
   }
 }
 @media only screen and (max-width: 850px) {
+  #oNama{
+    p{
+      width: 90%;
+    }
+    div{flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      img{
+        width: 70%;
+      }
+      p{
+        width: 80%!important;
+      }
+    }
+  }
   #usluge {
     .cards {
       .card {
