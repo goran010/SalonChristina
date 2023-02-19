@@ -43,16 +43,9 @@ main {
     justify-content: space-between;
     align-items: center;
   }
-  h3 {
-    text-align: center;
-    width: 100%;
-  }
-  p {
-    width: 60%;
-    text-align: center;
-  }
-  #pocetna{
-    position:relative;
+
+  #pocetna {
+    position: relative;
     top: 0;
     background-image: url(./assets/slika.jpg);
     background-repeat: no-repeat;
@@ -61,6 +54,14 @@ main {
     background-size: cover;
   }
   #oNama {
+    h3 {
+      text-align: center;
+      width: 100%;
+    }
+    p {
+      width: 60%;
+      text-align: center;
+    }
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -74,8 +75,9 @@ main {
         background-color: $color-3;
       }
     }
-    p{
-   text-align: center;
+    p {
+      text-align: center;
+      
     }
     div {
       display: flex;
@@ -89,7 +91,6 @@ main {
       width: 30%;
       aspect-ratio: 1;
     }
-    
   }
   #usluge {
     display: flex;
@@ -179,6 +180,10 @@ main {
       align-items: center;
       gap: 1rem;
       color: #4e4d4d;
+      h3 {
+        font-size: 1.2em;
+        text-align: left;
+      }
       div {
         padding: 1.5rem 1rem;
         width: 100%;
@@ -189,15 +194,13 @@ main {
         p {
           font-size: 1.1em;
         }
-        h3 {
-          font-size: 1.2em;
-          margin-bottom: 7px;
-        }
+
         .icons {
           display: flex;
           gap: 1.5rem;
           padding: 0;
           padding-top: 0.5rem;
+
           img {
             cursor: pointer;
           }
@@ -366,6 +369,7 @@ main {
         display: flex;
         .icons {
           width: 45%;
+          padding-top: 0rem;
         }
         h3 {
           width: 55%;
@@ -417,18 +421,19 @@ main {
   }
 }
 @media only screen and (max-width: 850px) {
-  #oNama{
-    p{
-      width: 90%;
+  #oNama {
+    p {
+      width: 90% !important;
     }
-    div{flex-direction: column;
+    div {
+      flex-direction: column;
       align-items: center;
       gap: 10px;
-      img{
+      img {
         width: 70%;
       }
-      p{
-        width: 80%!important;
+      p {
+        width: 80% !important;
       }
     }
   }

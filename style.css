@@ -42,14 +42,6 @@ main section {
   justify-content: space-between;
   align-items: center;
 }
-main h3 {
-  text-align: center;
-  width: 100%;
-}
-main p {
-  width: 60%;
-  text-align: center;
-}
 main #pocetna {
   position: relative;
   top: 0;
@@ -63,6 +55,14 @@ main #oNama {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+main #oNama h3 {
+  text-align: center;
+  width: 100%;
+}
+main #oNama p {
+  width: 60%;
+  text-align: center;
 }
 main #oNama h2 {
   display: flex;
@@ -177,6 +177,10 @@ main #kontakt .info {
   gap: 1rem;
   color: #4e4d4d;
 }
+main #kontakt .info h3 {
+  font-size: 1.2em;
+  text-align: left;
+}
 main #kontakt .info div {
   padding: 1.5rem 1rem;
   width: 100%;
@@ -187,10 +191,6 @@ main #kontakt .info div {
 }
 main #kontakt .info div p {
   font-size: 1.1em;
-}
-main #kontakt .info div h3 {
-  font-size: 1.2em;
-  margin-bottom: 7px;
 }
 main #kontakt .info div .icons {
   display: flex;
@@ -361,6 +361,7 @@ main #kontakt #gmap_canvas {
   }
   #kontakt .info div:nth-of-type(1) .icons {
     width: 45%;
+    padding-top: 0rem;
   }
   #kontakt .info div:nth-of-type(1) h3 {
     width: 55%;
@@ -402,7 +403,7 @@ main #kontakt #gmap_canvas {
 }
 @media only screen and (max-width: 850px) {
   #oNama p {
-    width: 90%;
+    width: 90% !important;
   }
   #oNama div {
     flex-direction: column;
