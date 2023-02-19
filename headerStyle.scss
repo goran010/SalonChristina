@@ -1,0 +1,151 @@
+$color-primary: #f3f1f5;
+$color-2: #f0d9ff;
+$color-3: #bfa2db;
+$color-dark: #7f7c82;
+
+
+
+header {
+    max-width: 100%;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+    justify-content: space-between;
+    position: sticky;
+    top:0px;
+    background-color: $color-primary;
+    z-index: 1000;
+    .icon{
+      margin-left:-20px;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 80%;
+      padding-right:3rem;
+      ul {
+        justify-self: flex-end;
+        min-width: fit-content;
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        li {
+          cursor: pointer;
+          min-width: fit-content;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          overflow: hidden;
+          text-transform: uppercase;
+          font-size: 1.4em;
+          font-weight: 500;
+          color: rgb(57, 57, 57);
+          padding-bottom: 2px;
+          transition: color transform 0.3s;
+        }
+        li:hover {
+          color: $color-3;
+          transform: scale(1.02);
+          padding: 0;
+          animation: bounce 0.2s ease-in;
+          span:nth-of-type(2) {
+            animation: animate 0.2s ease-in;
+            background-color: $color-2;
+            height: 2px;
+            width: 80%;
+          }
+        }
+      }
+    }
+    .hamburgerIcon {
+      display: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .hamburgerIcon:hover {
+      color: $color-dark;
+      transform: scale(1.04);
+    }
+    .navOverlay {
+      display: none;
+      position: fixed;
+      flex-direction: column;
+      width: 11rem;
+      height: 100%;
+      background-color: $color-3;
+      padding: 4rem 4rem;
+      justify-content: space-between;
+      top: 0;
+      right: 0;
+      transform: translateX(22rem);
+      .closeIcon {
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .closeIcon:hover {
+        transform: scale(1.05);
+      }
+      ul {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        li {
+          color: #f3f1f5;
+  
+          cursor: pointer;
+          font-size: 1.6em;
+          font-weight: 500;
+          text-transform: uppercase;
+          list-style-type: none;
+          transition: all 0.15s linear;
+        }
+        li:hover {
+          color: white;
+          font-weight: 600;
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    50% {
+      transform: translateX(-50%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.03);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media only screen and (max-width:900px) {
+   nav{
+    display: none!important;
+   }
+   .hamburgerIcon{
+    display: block !important;
+   }
+  }

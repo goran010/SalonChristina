@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f1f5;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: #4e4d4d;
+}
+
+h2 {
+  font-size: 2.7em;
+  text-align: center;
+  color: #7f7c82;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+main {
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  padding: 5rem 0rem;
+}
+main section {
+  width: 90%;
+  min-height: 50vh;
+  justify-content: space-between;
+}
+main #usluge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+main #usluge .cards {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main #usluge .cards .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  transition: all 0.4s ease;
+  padding: 1rem;
+  border-radius: 10px;
+}
+main #usluge .cards .card img {
+  border-radius: 50%;
+  width: 50%;
+  filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(-130deg) saturate(200%);
+}
+main #usluge .cards .card p {
+  margin-top: 1rem;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+main #usluge .cards .card:hover {
+  background-color: #f5e5ff;
+}
+main #usluge .line {
+  height: 1px;
+  width: 70%;
+  background-color: #bfa2db;
+}
+main #pocetna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #cjenik {
+  display: flex !important;
+  align-items: center;
+}
+main #cjenik .video video {
+  width: 60%;
+}
+main #cjenik .video .iconSpeaker {
+  cursor: pointer;
+  position: relative;
+  top: -15px;
+  right: 45px;
+  filter: invert(100%);
+  z-index: 60;
+}
+main #kontakt {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 2rem;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+main #kontakt h2 {
+  grid-column: 1/span 2;
+  padding-left: 16px;
+}
+main #kontakt .info {
+  justify-self: center;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #4e4d4d;
+}
+main #kontakt .info div {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 4px;
+}
+main #kontakt .info div p {
+  font-size: 1.1em;
+}
+main #kontakt .info div h3 {
+  font-size: 1.2em;
+  margin-bottom: 7px;
+}
+main #kontakt .info div .icons {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  padding-top: 0.5rem;
+}
+main #kontakt .info div .icons img {
+  cursor: pointer;
+}
+main #kontakt .info div:hover {
+  background-color: #f5e5ff;
+}
+main #kontakt .info .work-time .work-time-grid {
+  padding: 0;
+  display: flex;
+}
+main #kontakt .info .work-time .work-time-grid .work-time-item {
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+main #kontakt .info .work-time .work-time-grid .work-time-item p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 5px;
+  width: 55%;
+}
+main #kontakt .info .work-time h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+main #kontakt .container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-top: 24px;
+}
+main #kontakt .container form {
+  width: 100%;
+  max-width: 500px;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+main #kontakt .container form div,
+main #kontakt .container form label,
+main #kontakt .container form input,
+main #kontakt .container form textarea {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+main #kontakt .container form .field:nth-of-type(2) {
+  margin: 25px 0;
+}
+main #kontakt .container form label,
+main #kontakt .container form input,
+main #kontakt .container form textarea {
+  padding: 8px;
+}
+main #kontakt .container form label,
+main #kontakt .container form [placeholder] {
+  color: #555;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+main #kontakt .container form label {
+  font-size: 1.2em;
+}
+main #kontakt .container form label i {
+  margin: 0 10px 0 0;
+}
+main #kontakt .container form .field:focus-within label {
+  color: #000;
+  letter-spacing: 2px;
+}
+main #kontakt .container form input,
+main #kontakt .container form textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 6px -6px #555;
+}
+main #kontakt .container form input {
+  padding: 10px 8px;
+}
+main #kontakt .container form input:focus,
+main #kontakt .container form textarea:focus {
+  background: white;
+  box-shadow: none;
+}
+main #kontakt .container form textarea {
+  resize: none;
+}
+main #kontakt .container form button {
+  font-size: 1.1em;
+  background: #bfa2db;
+  margin: 16px 0 50px 0;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px #555;
+  transition: all 0.5s ease;
+}
+main #kontakt .container form button:hover {
+  letter-spacing: 2px;
+  box-shadow: none;
+}
+main #kontakt .mapouter {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  grid-column: 1/span 2;
+}
+main #kontakt .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main #kontakt .gmap_canvas div {
+  text-align: left;
+  width: 80%;
+}
+main #kontakt .gmap_canvas div h3 {
+  margin-bottom: 10px;
+}
+main #kontakt #gmap_canvas {
+  width: 80%;
+  min-width: 380px;
+  aspect-ratio: 16/9;
+}
+main #goUp {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 850px) {
+  #kontakt {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  #kontakt .container {
+    padding: 0;
+  }
+  #kontakt .container form {
+    min-width: 80% !important;
+  }
+  #kontakt .info {
+    min-width: 100% !important;
+  }
+  #kontakt .info div:nth-of-type(1) {
+    display: flex;
+  }
+  #kontakt .info div:nth-of-type(1) .icons {
+    width: 45%;
+  }
+  #kontakt .info div:nth-of-type(1) h3 {
+    width: 55%;
+  }
+  #kontakt .info div:nth-of-type(2) {
+    display: flex;
+  }
+  #kontakt .info div:nth-of-type(2) p {
+    width: 45%;
+  }
+  #kontakt .info div:nth-of-type(2) h3 {
+    width: 55%;
+  }
+  #cjenik video {
+    width: 100% !important;
+  }
+  #cjenik .iconSpeaker {
+    transform: translateY(-100%);
+    right: -90% !important;
+  }
+  .work-time .work-time-grid {
+    flex-direction: column !important;
+  }
+  .work-time .work-time-grid .work-time-item {
+    width: 100% !important;
+    gap: 10px;
+  }
+  .work-time .work-time-grid .work-time-item h3 {
+    width: 60% !important;
+  }
+  .work-time .work-time-grid .work-time-item p {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #usluge .cards .card {
+    width: 29%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #usluge .cards .card {
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #usluge .cards .card {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #usluge .cards .card {
+    width: 22%;
+  }
+}/*# sourceMappingURL=style.css.map */

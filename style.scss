@@ -1,0 +1,398 @@
+$color-primary: #f3f1f5;
+$color-2: #f0d9ff;
+$color-3: #bfa2db;
+$color-dark: #7f7c82;
+
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $color-primary;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: #4e4d4d;
+}
+
+h2 {
+  font-size: 2.7em;
+  text-align: center;
+  color: $color-dark;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+main {
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  padding: 5rem 0rem;
+  section {
+    width: 90%;
+    min-height: 50vh;
+    justify-content: space-between;
+  }
+  #usluge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    .cards {
+      width: 100%;
+      max-width: 1500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 2rem;
+        transition: all 0.4s ease;
+        padding: 1rem;
+        border-radius: 10px;
+        img {
+          border-radius: 50%;
+          width: 50%;
+          filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(-130deg)
+            saturate(200%);
+        }
+        p {
+          margin-top: 1rem;
+          text-align: justify;
+          font-size: 1em;
+          line-height: 1.4em;
+          letter-spacing: 1px;
+        }
+      }
+      .card:hover {
+        background-color: #f5e5ff;
+      }
+    }
+    .line {
+      height: 1px;
+      width: 70%;
+      background-color: #bfa2db;
+    }
+  }
+  #pocetna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #cjenik {
+    display: flex !important;
+    align-items: center;
+    .video {
+      video {
+        width: 60%;
+      }
+      .iconSpeaker {
+        cursor: pointer;
+        position: relative;
+        top: -15px;
+        right: 45px;
+        filter: invert(100%);
+        z-index: 60;
+      }
+    }
+  }
+  #kontakt {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 2rem;
+    min-height: fit-content;
+    grid-template-rows: auto;
+    justify-content: center;
+    h2 {
+      grid-column: 1 / span 2;
+      padding-left: 16px;
+    }
+    .info {
+      justify-self: center;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      color: #4e4d4d;
+      div {
+        padding: 1.5rem 1rem;
+        width: 100%;
+        max-width: 500px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        border-radius: 4px;
+        p {
+          font-size: 1.1em;
+        }
+        h3 {
+          font-size: 1.2em;
+          margin-bottom: 7px;
+        }
+        .icons {
+          display: flex;
+          gap: 1.5rem;
+          padding: 0;
+          padding-top: 0.5rem;
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+      div:hover {
+        background-color: #f5e5ff;
+      }
+      .work-time {
+        .work-time-grid {
+          padding: 0;
+          display: flex;
+          .work-time-item {
+            width: 50%;
+            border-radius: 10px;
+            padding: 20px 0px;
+            p {
+              font-size: 16px;
+              margin: 0;
+              margin-top: 5px;
+              width: 55%;
+            }
+          }
+        }
+        h2 {
+          font-size: 36px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .container {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      padding-top: 24px;
+      form {
+        width: 100%;
+        max-width: 500px;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        div,
+        label,
+        input,
+        textarea {
+          width: 100%;
+          transition: all 0.5s ease;
+        }
+        .field:nth-of-type(2) {
+          margin: 25px 0;
+        }
+        label,
+        input,
+        textarea {
+          padding: 8px;
+        }
+
+        label,
+        [placeholder] {
+          color: #555;
+          font-size: 1em;
+          font-family: "Roboto", sans-serif;
+        }
+        label {
+          font-size: 1.2em;
+        }
+        label i {
+          margin: 0 10px 0 0;
+        }
+        .field:focus-within label {
+          color: #000;
+          letter-spacing: 2px;
+        }
+        input,
+        textarea {
+          background: rgba(255, 255, 255, 0.5);
+          border: none;
+          border-radius: 4px;
+          box-shadow: 0 8px 6px -6px #555;
+        }
+        input {
+          padding: 10px 8px;
+        }
+        input:focus,
+        textarea:focus {
+          background: white;
+          box-shadow: none;
+        }
+        textarea {
+          resize: none;
+        }
+        button {
+          font-size: 1.1em;
+          background: $color-3;
+          margin: 16px 0 50px 0;
+          padding: 8px 16px;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          box-shadow: 0 8px 6px -6px #555;
+          transition: all 0.5s ease;
+        }
+        button:hover {
+          letter-spacing: 2px;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .mapouter {
+      position: relative;
+      text-align: left;
+      width: 100%;
+      grid-column: 1 / span 2;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      div {
+        text-align: left;
+        width: 80%;
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    #gmap_canvas {
+      width: 80%;
+      min-width: 380px;
+      aspect-ratio: 16/9;
+    }
+  }
+  #goUp {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #kontakt {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    .container {
+      padding: 0;
+      form {
+        min-width: 80% !important;
+      }
+    }
+    .info {
+      min-width: 100% !important;
+      div:nth-of-type(1) {
+        display: flex;
+        .icons {
+          width: 45%;
+        }
+        h3 {
+          width: 55%;
+        }
+      }
+      div:nth-of-type(2) {
+        display: flex;
+        p {
+          width: 45%;
+        }
+        h3 {
+          width: 55%;
+        }
+      }
+    }
+  }
+  #cjenik {
+    video {
+      width: 100% !important;
+    }
+    .iconSpeaker {
+      transform: translateY(-100%);
+      right: -90% !important;
+    }
+  }
+  .work-time {
+    .work-time-grid {
+      flex-direction: column !important;
+      .work-time-item {
+        width: 100% !important;
+        gap: 10px;
+        h3 {
+          width: 60% !important;
+        }
+        p {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #usluge {
+    .cards {
+      .card {
+        width: 29%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  #usluge {
+    .cards {
+      .card {
+        width: 43%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  #usluge {
+    .cards {
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #usluge {
+    .cards {
+      .card {
+        width: 22%;
+      }
+    }
+  }
+}
