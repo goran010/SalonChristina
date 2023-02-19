@@ -281,7 +281,8 @@ main #kontakt #gmap_canvas {
   min-width: 380px;
   aspect-ratio: 16/9;
 }
-main #goUp {
+
+#goUp {
   display: none;
   position: fixed;
   bottom: 30px;
