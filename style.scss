@@ -77,7 +77,6 @@ main {
     }
     p {
       text-align: center;
-      
     }
     div {
       display: flex;
@@ -192,15 +191,14 @@ main {
         overflow: hidden;
         border-radius: 4px;
         p {
+          padding-top: 0.8rem;
           font-size: 1.1em;
         }
-
         .icons {
           display: flex;
           gap: 1.5rem;
           padding: 0;
-          padding-top: 0.5rem;
-
+          padding-top: 0.8rem;
           img {
             cursor: pointer;
           }
@@ -369,7 +367,7 @@ main {
         display: flex;
         .icons {
           width: 45%;
-          padding-top: 0rem;
+          padding-top: 0rem !important;
         }
         h3 {
           width: 55%;
@@ -379,6 +377,7 @@ main {
         display: flex;
         p {
           width: 45%;
+          padding-top: 0rem !important;
         }
         h3 {
           width: 55%;

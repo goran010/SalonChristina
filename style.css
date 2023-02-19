@@ -190,13 +190,14 @@ main #kontakt .info div {
   border-radius: 4px;
 }
 main #kontakt .info div p {
+  padding-top: 0.8rem;
   font-size: 1.1em;
 }
 main #kontakt .info div .icons {
   display: flex;
   gap: 1.5rem;
   padding: 0;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
 }
 main #kontakt .info div .icons img {
   cursor: pointer;
@@ -361,7 +362,7 @@ main #kontakt #gmap_canvas {
   }
   #kontakt .info div:nth-of-type(1) .icons {
     width: 45%;
-    padding-top: 0rem;
+    padding-top: 0rem !important;
   }
   #kontakt .info div:nth-of-type(1) h3 {
     width: 55%;
@@ -371,6 +372,7 @@ main #kontakt #gmap_canvas {
   }
   #kontakt .info div:nth-of-type(2) p {
     width: 45%;
+    padding-top: 0rem !important;
   }
   #kontakt .info div:nth-of-type(2) h3 {
     width: 55%;
