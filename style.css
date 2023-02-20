@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Sacramento");
 * {
   margin: 0;
   padding: 0;
@@ -45,11 +46,32 @@ main section {
 main #pocetna {
   position: relative;
   top: 0;
-  background-image: url(./assets/slika.jpg);
+  background-image: url(./assets/slikaPocetna.jpg);
   background-repeat: no-repeat;
   width: 100%;
-  aspect-ratio: 1.5;
+  aspect-ratio: 1.9;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #pocetna h1 {
+  font-family: "Sacramento";
+  text-align: center;
+  width: 100%;
+  font-size: 7rem;
+  z-index: 100;
+}
+main #pocetna:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
 }
 main #oNama {
   display: flex;
@@ -102,8 +124,11 @@ main #usluge .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 1rem;
 }
 main #usluge .cards .card {
+  background-color: white;
+  box-shadow: 0 8px 6px -6px #555;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -128,16 +153,12 @@ main #usluge .cards .card p {
 }
 main #usluge .cards .card:hover {
   background-color: #f5e5ff;
+  transform: scale(1.01);
 }
 main #usluge .line {
   height: 1px;
   width: 70%;
   background-color: #bfa2db;
-}
-main #pocetna {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 main #cjenik {
   display: flex !important;
@@ -396,6 +417,7 @@ main #kontakt #gmap_canvas {
   }
   .work-time .work-time-grid .work-time-item p {
     margin: 0 !important;
+    padding-top: 0rem !important;
   }
 }
 @media only screen and (max-width: 1200px) {

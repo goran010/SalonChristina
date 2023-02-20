@@ -14,8 +14,7 @@ ul {
 
 .footer {
   background-color: #24262b;
-  padding: 50px 0;
-  z-index: 1999;
+  padding: 40px 0;
 }
 
 .footer-col {
@@ -81,7 +80,6 @@ ul {
   background-color: #f0d9ff;
 }
 
-/*responsive*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
