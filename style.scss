@@ -372,10 +372,16 @@ main {
   height: 40px;
 }
 @media only screen and (max-width: 850px) {
+  #pocetna {
+    h1 {
+      font-size: 5rem !important;
+    }
+  }
   #kontakt {
     display: flex !important;
     flex-direction: column;
     align-items: center;
+
     .container {
       padding: 0;
       form {
@@ -473,6 +479,9 @@ main {
         width: 100% !important;
       }
     }
+  }
+  #pocetna {
+    word-spacing: 100%; 
   }
 }
 

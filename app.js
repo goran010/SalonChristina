@@ -3,6 +3,17 @@ const hamburgerIcon = document.querySelector(".hamburgerIcon");
 const closeIcon = document.querySelector(".closeIcon");
 const speaker = document.querySelector(".iconSpeaker");
 const btnGoUp = document.getElementById("goUp");
+const navItems = document.querySelectorAll(".navItem");
+console.log(navItems);
+
+for (let i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener("click", () => {
+    navOverlay.style.transform = " translateX(22rem)";
+    setTimeout(() => {
+      navOverlay.style.display = "none";
+    }, 400);
+  });
+}
 
 window.addEventListener("load", () => {
   navOverlay.style.transition = "transform 0.4s ease";

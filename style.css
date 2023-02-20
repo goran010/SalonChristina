@@ -364,6 +364,9 @@ main #kontakt #gmap_canvas {
 }
 
 @media only screen and (max-width: 850px) {
+  #pocetna h1 {
+    font-size: 5rem !important;
+  }
   #kontakt {
     display: flex !important;
     flex-direction: column;
@@ -447,6 +450,9 @@ main #kontakt #gmap_canvas {
 @media only screen and (max-width: 650px) {
   #usluge .cards .card {
     width: 100% !important;
+  }
+  #pocetna {
+    word-spacing: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
