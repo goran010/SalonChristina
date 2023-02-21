@@ -34,7 +34,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7rem;
+  gap: 9rem;
   padding: 5rem 0rem;
   padding-top: 0;
 }
@@ -76,40 +76,44 @@ main #pocetna:after {
 main #oNama {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 14rem;
 }
-main #oNama h3 {
-  text-align: center;
-  width: 100%;
-}
-main #oNama p {
-  width: 60%;
-  text-align: center;
-}
-main #oNama h2 {
+main #oNama .prviPara {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
-main #oNama h2 .line {
-  width: 80%;
-  height: 1px;
-  background-color: #bfa2db;
+main #oNama .prviPara h2 {
+  align-items: center;
 }
-main #oNama p {
+main #oNama .prviPara p {
   text-align: center;
+  width: 60%;
 }
-main #oNama div {
+main #oNama .oOsobi {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 7rem 20rem;
+}
+main #oNama .oOsobi div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
-main #oNama div p {
-  width: 55%;
+main #oNama .oOsobi div p {
   text-align: justify;
+  justify-self: center;
+  width: 100%;
 }
-main #oNama img {
-  width: 30%;
+main #oNama .oOsobi img {
+  width: 60%;
+  justify-self: center;
   aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  grid-row: 1/span 2;
 }
 main #usluge {
   display: flex;
@@ -166,6 +170,7 @@ main #cjenik {
 }
 main #cjenik .video video {
   width: 60%;
+  border-radius: 5px;
 }
 main #cjenik .video .iconSpeaker {
   cursor: pointer;

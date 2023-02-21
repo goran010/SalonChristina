@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+
   background-color: $color-primary;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
@@ -35,16 +36,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7rem;
+  gap: 9rem;
   padding: 5rem 0rem;
   padding-top: 0;
   section {
     width: 90%;
-
     justify-content: space-between;
     align-items: center;
   }
-
   #pocetna {
     position: relative;
     top: 0;
@@ -76,41 +75,46 @@ main {
     }
   }
   #oNama {
-    h3 {
-      text-align: center;
-      width: 100%;
-    }
-    p {
-      width: 60%;
-      text-align: center;
-    }
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    h2 {
+    gap: 14rem;
+    .prviPara {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .line {
-        width: 80%;
-        height: 1px;
-        background-color: $color-3;
+      gap: 1rem;
+      h2 {
+        align-items: center;
       }
-    }
-    p {
-      text-align: center;
-    }
-    div {
-      display: flex;
-      justify-content: space-between;
       p {
-        width: 55%;
-        text-align: justify;
+        text-align: center;
+        width: 60%;
       }
     }
-    img {
-      width: 30%;
-      aspect-ratio: 1;
+    .oOsobi {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 7rem 20rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        p {
+          text-align: justify;
+          justify-self: center;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 60%;
+        justify-self: center;
+        aspect-ratio: 1;
+        background-color: white;
+        border-radius: 50%;
+        grid-row: 1 / span 2;
+      }
     }
   }
   #usluge {
@@ -169,6 +173,7 @@ main {
     .video {
       video {
         width: 60%;
+        border-radius: 5px;
       }
       .iconSpeaker {
         cursor: pointer;
@@ -481,7 +486,7 @@ main {
     }
   }
   #pocetna {
-    word-spacing: 100%; 
+    word-spacing: 100%;
   }
 }
 
