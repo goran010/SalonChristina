@@ -117,7 +117,6 @@ main .oOsobi div p {
 }
 main .oOsobi img {
   width: 50%;
-  aspect-ratio: 0.75;
   height: auto;
   justify-self: center;
   background-color: white;
@@ -470,9 +469,6 @@ main #kontakt #gmap_canvas {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
-  #oNama div img {
-    width: 70%;
   }
   #oNama div p {
     width: 80% !important;

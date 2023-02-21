@@ -116,7 +116,6 @@ main {
     }
     img {
       width: 50%;
-      aspect-ratio: 0.75;
       height: auto;
       justify-self: center;
       background-color: white;
@@ -489,9 +488,6 @@ main {
       flex-direction: column;
       align-items: center;
       gap: 10px;
-      img {
-        width: 70%;
-      }
       p {
         width: 80% !important;
       }
