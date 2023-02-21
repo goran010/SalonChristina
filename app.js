@@ -4,6 +4,7 @@ const closeIcon = document.querySelector(".closeIcon");
 const speaker = document.querySelector(".iconSpeaker");
 const btnGoUp = document.getElementById("goUp");
 const navItems = document.querySelectorAll(".navItem");
+const myAudio = document.querySelector("video");
 
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener("click", () => {
@@ -33,7 +34,6 @@ closeIcon.addEventListener("click", () => {
 });
 
 speaker.addEventListener("click", () => {
-  let myAudio = document.querySelector("video");
   myAudio.muted = !myAudio.muted;
   myAudio.muted
     ? (speaker.src = "icons/mute.png")
