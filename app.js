@@ -4,7 +4,6 @@ const closeIcon = document.querySelector(".closeIcon");
 const speaker = document.querySelector(".iconSpeaker");
 const btnGoUp = document.getElementById("goUp");
 const navItems = document.querySelectorAll(".navItem");
-console.log(navItems);
 
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener("click", () => {
@@ -42,7 +41,7 @@ speaker.addEventListener("click", () => {
 });
 
 window.onscroll = function () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000 ) {
     btnGoUp.style.display = "block";
   } else {
     btnGoUp.style.display = "none";

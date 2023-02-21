@@ -111,6 +111,10 @@ main .oOsobi div {
   gap: 1.6rem;
   padding-bottom: 2rem;
 }
+main .oOsobi div p {
+  font-family: Sacramento;
+  font-size: 1.5em;
+}
 main .oOsobi img {
   width: 50%;
   justify-self: center;
@@ -505,6 +509,9 @@ main #kontakt #gmap_canvas {
     flex-direction: column !important;
     align-items: center !important;
   }
+  .oOsobi img {
+    width: 100% !important;
+  }
   .oOsobi h3 {
     align-self: center !important;
   }
@@ -514,8 +521,8 @@ main #kontakt #gmap_canvas {
     gap: 0 !important;
   }
   .oOsobi .squeres div {
-    width: 30% !important;
-    font-size: 1em !important;
+    width: 31% !important;
+    font-size: 1.25em !important;
   }
 }
 @media only screen and (min-width: 1200px) {
