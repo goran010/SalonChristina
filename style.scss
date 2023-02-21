@@ -537,6 +537,8 @@ main {
     align-items: center !important;
     img {
       width: 100% !important;
+      height: auto;
+      aspect-ratio:initial;
     }
     h3 {
       align-self: center !important;

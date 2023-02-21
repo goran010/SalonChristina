@@ -509,6 +509,8 @@ main #kontakt #gmap_canvas {
   }
   .oOsobi img {
     width: 100% !important;
+    height: auto;
+    aspect-ratio: initial;
   }
   .oOsobi h3 {
     align-self: center !important;
