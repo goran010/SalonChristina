@@ -208,6 +208,10 @@ main #cjenik .video .iconSpeaker {
   filter: invert(100%);
   z-index: 60;
 }
+main #cjenik .cjenikSlika {
+  width: 40%;
+  padding: 0rem 3rem;
+}
 main #kontakt {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -475,6 +479,16 @@ main #kontakt #gmap_canvas {
   }
   #usluge .cards .card {
     width: 43%;
+  }
+  #cjenik {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #cjenik img {
+    margin-top: -150px;
+    width: 90% !important;
+    padding: 0;
   }
   .oOsobi {
     display: flex !important;

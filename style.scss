@@ -210,6 +210,10 @@ main {
         z-index: 60;
       }
     }
+    .cjenikSlika {
+      width: 40%;
+      padding: 0rem 3rem;
+    }
   }
   #kontakt {
     display: grid;
@@ -477,7 +481,6 @@ main {
       }
     }
   }
- 
 }
 @media only screen and (max-width: 850px) {
   #oNama {
@@ -500,7 +503,17 @@ main {
       }
     }
   }
-
+  #cjenik {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+    img {
+      margin-top: -150px;
+      width: 90% !important;
+      padding: 0;
+    }
+  }
   .oOsobi {
     display: flex !important;
     flex-direction: column !important;
@@ -538,7 +551,7 @@ main {
     img {
       width: 100% !important;
       height: auto;
-      aspect-ratio:initial;
+      aspect-ratio: initial;
     }
     h3 {
       align-self: center !important;
