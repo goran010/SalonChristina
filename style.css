@@ -91,29 +91,52 @@ main #oNama .prviPara p {
   text-align: center;
   width: 60%;
 }
-main #oNama .oOsobi {
+main .oOsobi {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 7rem 20rem;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto auto auto;
+  row-gap: 2rem;
+  background-color: #bfa2db;
+  padding: 3rem 3rem;
+  color: white;
 }
-main #oNama .oOsobi div {
+main .oOsobi h3 {
+  align-self: last baseline;
+  font-size: 2em;
+}
+main .oOsobi div {
+  justify-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  gap: 1.6rem;
+  padding-bottom: 2rem;
 }
-main #oNama .oOsobi div p {
-  text-align: justify;
+main .oOsobi img {
+  width: 50%;
   justify-self: center;
-  width: 100%;
-}
-main #oNama .oOsobi img {
-  width: 60%;
-  justify-self: center;
-  aspect-ratio: 1;
   background-color: white;
-  border-radius: 50%;
   grid-row: 1/span 2;
+}
+main .oOsobi .squeres {
+  margin-top: -10%;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  grid-column: 1/span 2;
+  flex-direction: row;
+}
+main .oOsobi .squeres div {
+  padding: 0;
+  width: 18%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Sacramento";
+  color: #4e4d4d;
+  font-size: 2.3em;
+  border-radius: 6px;
 }
 main #usluge {
   display: flex;
@@ -451,6 +474,24 @@ main #kontakt #gmap_canvas {
   #usluge .cards .card {
     width: 43%;
   }
+  .oOsobi {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .oOsobi h3 {
+    align-self: center !important;
+  }
+  .oOsobi .squeres {
+    width: 100%;
+    justify-content: space-evenly !important;
+    margin-top: 0 !important;
+    gap: 0 !important;
+  }
+  .oOsobi .squeres div {
+    width: 30% !important;
+    font-size: 1.6em !important;
+  }
 }
 @media only screen and (max-width: 650px) {
   #usluge .cards .card {
@@ -458,6 +499,23 @@ main #kontakt #gmap_canvas {
   }
   #pocetna {
     word-spacing: 100%;
+  }
+  .oOsobi {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .oOsobi h3 {
+    align-self: center !important;
+  }
+  .oOsobi .squeres {
+    width: 100%;
+    justify-content: space-evenly !important;
+    gap: 0 !important;
+  }
+  .oOsobi .squeres div {
+    width: 30% !important;
+    font-size: 1em !important;
   }
 }
 @media only screen and (min-width: 1200px) {
