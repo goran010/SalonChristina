@@ -447,15 +447,7 @@ main {
       }
     }
   }
-  #cjenik {
-    video {
-      width: 100% !important;
-    }
-    .iconSpeaker {
-      transform: translateY(-100%);
-      right: -90% !important;
-    }
-  }
+
   .work-time {
     .work-time-grid {
       flex-direction: column !important;
@@ -507,9 +499,15 @@ main {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    
+    video {
+      width: 100% !important;
+    }
+    .iconSpeaker {
+      display: none;
+    }
+
     img {
-      margin-top: -150px;
+      margin-top: 30px;
       width: 90% !important;
       padding: 0;
     }

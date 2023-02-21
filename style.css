@@ -438,13 +438,6 @@ main #kontakt #gmap_canvas {
   #kontakt .info div:nth-of-type(2) h3 {
     width: 55%;
   }
-  #cjenik video {
-    width: 100% !important;
-  }
-  #cjenik .iconSpeaker {
-    transform: translateY(-100%);
-    right: -90% !important;
-  }
   .work-time .work-time-grid {
     flex-direction: column !important;
   }
@@ -485,8 +478,14 @@ main #kontakt #gmap_canvas {
     justify-content: center !important;
     align-items: center !important;
   }
+  #cjenik video {
+    width: 100% !important;
+  }
+  #cjenik .iconSpeaker {
+    display: none;
+  }
   #cjenik img {
-    margin-top: -150px;
+    margin-top: 30px;
     width: 90% !important;
     padding: 0;
   }
