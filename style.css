@@ -157,6 +157,8 @@ main #usluge .cards {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 main #usluge .cards .card {
   background-color: white;
@@ -170,6 +172,7 @@ main #usluge .cards .card {
   transition: all 0.4s ease;
   padding: 1rem;
   border-radius: 10px;
+  width: 22%;
 }
 main #usluge .cards .card img {
   border-radius: 50%;
@@ -400,7 +403,60 @@ main #kontakt #gmap_canvas {
   height: 40px;
 }
 
+@media only screen and (max-width: 1200px) {
+  #usluge .cards .card {
+    width: 29%;
+  }
+}
 @media only screen and (max-width: 850px) {
+  #oNama p {
+    width: 90% !important;
+  }
+  #oNama div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #oNama div p {
+    width: 80% !important;
+  }
+  #usluge .cards .card {
+    width: 43% !important;
+  }
+  #cjenik {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #cjenik video {
+    width: 100% !important;
+  }
+  #cjenik .iconSpeaker {
+    display: none;
+  }
+  #cjenik img {
+    margin-top: 30px;
+    width: 90% !important;
+    padding: 0;
+  }
+  .oOsobi {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .oOsobi h3 {
+    align-self: center !important;
+  }
+  .oOsobi .squeres {
+    width: 100%;
+    justify-content: space-evenly !important;
+    margin-top: 0 !important;
+    gap: 0 !important;
+  }
+  .oOsobi .squeres div {
+    width: 30% !important;
+    font-size: 1.6em !important;
+  }
   #pocetna h1 {
     font-size: 5rem !important;
   }
@@ -453,61 +509,6 @@ main #kontakt #gmap_canvas {
     padding-top: 0rem !important;
   }
 }
-@media only screen and (max-width: 1200px) {
-  #usluge .cards .card {
-    width: 29%;
-  }
-}
-@media only screen and (max-width: 850px) {
-  #oNama p {
-    width: 90% !important;
-  }
-  #oNama div {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  #oNama div p {
-    width: 80% !important;
-  }
-  #usluge .cards .card {
-    width: 43%;
-  }
-  #cjenik {
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  #cjenik video {
-    width: 100% !important;
-  }
-  #cjenik .iconSpeaker {
-    display: none;
-  }
-  #cjenik img {
-    margin-top: 30px;
-    width: 90% !important;
-    padding: 0;
-  }
-  .oOsobi {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  .oOsobi h3 {
-    align-self: center !important;
-  }
-  .oOsobi .squeres {
-    width: 100%;
-    justify-content: space-evenly !important;
-    margin-top: 0 !important;
-    gap: 0 !important;
-  }
-  .oOsobi .squeres div {
-    width: 30% !important;
-    font-size: 1.6em !important;
-  }
-}
 @media only screen and (max-width: 650px) {
   #usluge .cards .card {
     width: 100% !important;
@@ -536,10 +537,5 @@ main #kontakt #gmap_canvas {
   .oOsobi .squeres div {
     width: 31% !important;
     font-size: 1.25em !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #usluge .cards .card {
-    width: 22%;
   }
 }/*# sourceMappingURL=style.css.map */
