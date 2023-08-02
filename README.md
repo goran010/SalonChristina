@@ -1,4 +1,4 @@
-# Studio ChristINA
+# Studio Christina
 # Studio Christina Website Project
 
 ![Studio Christina](./path/to/screenshot.png)
